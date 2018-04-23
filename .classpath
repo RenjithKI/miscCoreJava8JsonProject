@@ -6,7 +6,7 @@
 	<classpathentry kind="lib" path="C:/ECLIPSEOXYGEN/extlibs/hamcrest-all-1.3.jar"/>
 	<classpathentry kind="lib" path="C:/ECLIPSEOXYGEN/extlibs/json-simple-1.1.1.jar"/>
 	<classpathentry kind="lib" path="C:/ECLIPSEOXYGEN/extlibs/javax.json-api-1.0-javadoc.jar"/>
-	<classpathentry kind="lib" path="C:/ECLIPSEOXYGEN/extlibs/gson-2.8.2.jar"/>
+	<classpathentry kind="lib" path="C:/ECLIPSEOXYGEN/extlibs/gson-2.8.2.jar" sourcepath="C:/Users/Renjith/.m2/repository/com/google/code/gson/gson/2.8.2/gson-2.8.2-sources.jar"/>
 	<classpathentry kind="lib" path="C:/ECLIPSEOXYGEN/extlibs/json-20180130.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
