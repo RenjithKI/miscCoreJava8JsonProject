@@ -4,8 +4,12 @@ import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.io.Serializable;
-public class PersistentAnimationRevised implements Serializable, Runnable
-{
+
+/**
+ * @author Renjith
+ *http://www.oracle.com/technetwork/articles/java/javaserial-1536170.html
+ */
+public class PersistentAnimationRevised implements Serializable, Runnable{
 	/**
 	 * 
 	 */

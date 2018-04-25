@@ -7,6 +7,7 @@ import java.io.IOException;
 
 /**
  * @author Renjith
+ * http://www.oracle.com/technetwork/articles/java/javaserial-1536170.html
  *
  */
 public class FlattenTime   {

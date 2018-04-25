@@ -7,7 +7,7 @@ import java.util.Calendar;
 
 /**
  * @author Renjith
- *
+ *http://www.oracle.com/technetwork/articles/java/javaserial-1536170.html
  */
 public class InflateTime{
 	public static void main(String [] args)

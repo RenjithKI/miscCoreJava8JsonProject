@@ -1,7 +1,11 @@
 package zzzJavaSeralizeDeserialize;
 import java.io.Serializable;
-public class PersistentAnimation implements Serializable, Runnable
-{
+
+/**
+ * @author Renjith
+ *http://www.oracle.com/technetwork/articles/java/javaserial-1536170.html
+ */
+public class PersistentAnimation implements Serializable, Runnable{
 	/**
 	 * 
 	 */
