@@ -26,6 +26,7 @@ public class FlattenTime   {
 			fos = new FileOutputStream(filename);
 			out = new ObjectOutputStream(fos);
 			out.writeObject(time);
+			out.writeObject(new String("jai how are you"));
 			out.close();
 		}
 		catch(IOException ex)

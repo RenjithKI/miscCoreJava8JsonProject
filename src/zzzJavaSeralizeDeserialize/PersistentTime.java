@@ -12,7 +12,11 @@ public class PersistentTime implements Serializable {
 	/**
 	 * 
 	 */
-	private static final long serialVersionUID = 1L;
+	private static final long serialVersionUID = 5578776239441333335L;
+	/**
+	 * 
+	 */
+	/*private static final long serialVersionUID = 1L;*/
 	private Date time;
 
 	public PersistentTime()

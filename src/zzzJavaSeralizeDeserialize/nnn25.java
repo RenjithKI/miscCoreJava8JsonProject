@@ -4,7 +4,7 @@ package zzzJavaSeralizeDeserialize;
  * @author Renjith
  *
  */
-public class nnn24 {
+public class nnn25 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

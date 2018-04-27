@@ -21,9 +21,12 @@ public class PersistentAnimation implements Serializable, Runnable{
 
 	@Override
 	public void run() {
-		while(true)
+		long startTime = System.currentTimeMillis(); //fetch starting time
+		//while(true)
+		while ((System.currentTimeMillis()-startTime)<1000)
 		{
 			// do animation here
+			System.out.println("doning animation here: ");
 		}
 
 	} 
