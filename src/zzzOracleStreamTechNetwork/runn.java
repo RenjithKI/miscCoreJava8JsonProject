@@ -4,10 +4,11 @@ package zzzOracleStreamTechNetwork;
  * @author Renjith
  *
  */
-public class nnn26 {
+public class runn {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		Runnable runn = () -> { for (int i =0; i< 1000; i++) System.out.println("HAIIIIIIIIIIIIIII"); };
+		new Thread(runn).start();
 
 	}
 

@@ -9,7 +9,7 @@ import java.io.IOException;
  * @author Renjith
  *
  */
-public class javaObjectToJSON2 {
+public class javaObjectToJSON {
 
 	public static void main(String[] args) throws JsonIOException, IOException {
 		//1.1 toJson() – Convert Java object to JSON

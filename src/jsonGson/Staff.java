@@ -38,6 +38,16 @@ public class Staff {
 	private BigDecimal salary;
 	private List<String> skills;
 	
+	
+	
+	public Staff( ) {
+		super();		
+	}
+	public Staff(String name, int age) {
+		super();
+		this.name = name;
+		this.age = age;
+	}
 	//getters and setters
 	
 	public String getName() {
