@@ -1,6 +1,6 @@
 package jsonJackson;
 
-/**https://www.mkyong.com/java/how-do-convert-java-object-to-from-json-format-gson-api/
+/**http://www.mkyong.com/java/jackson-2-convert-java-object-to-from-json/
  * @author Renjith
  *
  */

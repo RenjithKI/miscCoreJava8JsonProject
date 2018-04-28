@@ -8,5 +8,8 @@
 	<classpathentry kind="lib" path="C:/ECLIPSEOXYGEN/extlibs/javax.json-api-1.0-javadoc.jar"/>
 	<classpathentry kind="lib" path="C:/ECLIPSEOXYGEN/extlibs/gson-2.8.2.jar" sourcepath="C:/Users/Renjith/.m2/repository/com/google/code/gson/gson/2.8.2/gson-2.8.2-sources.jar"/>
 	<classpathentry kind="lib" path="C:/ECLIPSEOXYGEN/extlibs/json-20180130.jar"/>
+	<classpathentry kind="lib" path="C:/ECLIPSEOXYGEN/extlibs/jackson-core-2.9.5.jar"/>
+	<classpathentry kind="lib" path="C:/ECLIPSEOXYGEN/extlibs/jackson-databind-2.9.1.jar" sourcepath="C:/Users/Renjith/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.9.1/jackson-databind-2.9.1-sources.jar"/>
+	<classpathentry kind="lib" path="C:/ECLIPSEOXYGEN/extlibs/jackson-annotations-2.9.0.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
