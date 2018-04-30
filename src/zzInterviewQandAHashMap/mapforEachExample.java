@@ -3,13 +3,14 @@ package zzInterviewQandAHashMap;
 import java.util.HashMap;
 import java.util.Map;
 
-/**https://www.mkyong.com/java8/java-8-foreach-examples/
+/**http://www.oracle.com/technetwork/articles/java/ma14-java-se-8-streams-2177646.html
  * @author Renjith
- *http://www.mkyong.com/tutorials/java-8-tutorials/
+ *
  */
-public class Map_ForEach {
+public class mapforEachExample {
 
 	public static void main(String[] args) {
+		// TODO Auto-generated method stub
 		Map<String, Integer> items = new HashMap<>();
 		items.put("A", 10);
 		items.put("B", 20);
@@ -17,13 +18,7 @@ public class Map_ForEach {
 		items.put("D", 40);
 		items.put("E", 50);
 		items.put("F", 60);
-
-		for (Map.Entry<String, Integer> entry : items.entrySet()) {
-			System.out.println("Item : " + entry.getKey() + " Count : " + entry.getValue());
-		}
 		
-		
-		//_________________part 2____________
 		items.forEach((k,v)->System.out.println("Item : " + k + " Count : " + v));
 		
 		items.forEach((k,v)->{
