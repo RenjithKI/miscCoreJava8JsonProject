@@ -34,7 +34,8 @@ public class jacksonjsonToJavaObj {
 		try {
 
 			// Convert JSON string from file to Object
-			Staff staff = mapper.readValue(new File("D:\\staff.json"), Staff.class);
+			//C:\\ECLIPSEOXYGEN\\WS\\miscJava8Project\\src\\jsonGson\\file.json
+			Staff staff = mapper.readValue(new File("C:\\ECLIPSEOXYGEN\\WS\\miscJava8Project\\src\\jsonGson\\file.json"), Staff.class);
 			System.out.println(staff);
 
 			// Convert JSON string to Object

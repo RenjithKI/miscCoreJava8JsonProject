@@ -1,10 +1,10 @@
 package jsonGson;
 
-/**http://www.oracle.com/technetwork/articles/java/ma14-java-se-8-streams-2177646.html
+/**
  * @author Renjith
- *
+ *https://stackoverflow.com/questions/27628096/json-array-to-java-objects
  */
-public class nnn19 {
+public class toDo {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

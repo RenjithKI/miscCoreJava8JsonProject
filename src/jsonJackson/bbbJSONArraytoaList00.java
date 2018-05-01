@@ -1,4 +1,4 @@
-package yyyjava8.misc;
+package jsonJackson;
 
 import java.io.IOException;
 import java.util.List;
@@ -14,13 +14,13 @@ import com.fasterxml.jackson.databind.ObjectMapper;
  * @author Renjith
  *
  */
-public class JacksonJSONArraytoaList {
+public class bbbJSONArraytoaList00 {
 
 	public static void main(String[] args) {
 		// 6.1 Convert a JSON Array to a List, using TypeToken
 		ObjectMapper mapper = new ObjectMapper();
 		
-		String json = "[{\"name\":\"renjith\"}, {\"name\":\"laplap\"}]";
+		String json = "[{\"name\":\"renjith\"}, {\"name\":\"Paulachan\"}]";
 		List<Staff> list = null;
 		try {
 			list = mapper.readValue(json, new TypeReference<List<Staff>>(){});

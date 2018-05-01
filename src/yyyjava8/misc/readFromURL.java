@@ -1,4 +1,5 @@
-package zzzJackson2Convert_JavaObjectto_fromJSON;
+package yyyjava8.misc;
+
 /**
  * <!-- https://mvnrepository.com/artifact/org.json/json -->
 <dependency>
@@ -8,21 +9,15 @@ package zzzJackson2Convert_JavaObjectto_fromJSON;
 </dependency>
 
  *
- */
-/**
+ *//*
+*//**
  * @author Renjith
  * https://crunchify.com/json-manipulation-in-java-examples/
  *
  */
-
-import static org.junit.Assert.assertTrue;
-
-
-import java.util.stream.Stream;
-
-import org.junit.Test;
-
-
+/**
+ * @author Crunchify.com
+ */
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.net.URL;
@@ -33,22 +28,17 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
  
-/**
- * @author Renjith
- *
- */
-public class CrunchifyJSON {
+public class readFromURL {
  
 	public static void main(String[] args) {
  
 		String jsonString = callURL("https://cdn.crunchify.com/wp-content/uploads/code/jsonArray.txt");
 		System.out.println("\n\njsonString: " + jsonString);
-		
  
 // Replace this try catch block for all below subsequent examples
 		try {  
 			JSONArray jsonArray = new JSONArray(jsonString);
-			System.out.println("\n\njsonArray: ___>" + jsonArray);
+			System.out.println("\n\njsonArray: " + jsonArray);
 		} catch (JSONException e) {
 			e.printStackTrace();
 		}
