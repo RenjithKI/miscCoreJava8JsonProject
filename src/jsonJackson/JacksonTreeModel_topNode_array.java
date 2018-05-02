@@ -13,21 +13,45 @@ import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-public class JacksonTreeModelTWO {
+public class JacksonTreeModel_topNode_array {
 
 	public static void main(String[] args) {
 
 		try {
-
 			long id;
 			String firstName = "";
 			String middleName = "";
 			String lastName = "";
 
 			ObjectMapper mapper = new ObjectMapper();
-
-			JsonNode root = mapper.readTree(new File("c:\\user.json"));
-
+			//2.2 The concept is same, just loops the first node.
+			JsonNode rootArray  = mapper.readTree(new File("C:\\ECLIPSEOXYGEN\\WS\\miscJava8Project\\src\\jsonJackson\\user2.json"));
+			/*[
+ {
+  "id"   : 1,
+  "name" : {
+    "first" : "Yong",
+    "last" : "Mook Kim" 
+  },
+  "contact" : [
+    { "type" : "phone/home", "ref" : "111-111-1234"},
+    { "type" : "phone/work", "ref" : "222-222-2222"}
+  ]
+},
+{
+  "id"   : 2,
+  "name" : {
+    "first" : "Yong",
+    "last" : "Zi Lap" 
+  },
+  "contact" : [
+    { "type" : "phone/home", "ref" : "333-333-1234"},
+    { "type" : "phone/work", "ref" : "444-444-4444"}
+  ]
+}
+]*/
+			for(JsonNode root : rootArray){
+			
 			// Get id
 			id = root.path("id").asLong();
 			System.out.println("id : " + id);
@@ -62,6 +86,9 @@ public class JacksonTreeModelTWO {
 				System.out.println("ref : " + ref);
 
 			}
+			
+			System.out.println("end of loop_________________________");
+			}//for loop of root array
 
 		} catch (JsonGenerationException e) {
 			e.printStackTrace();

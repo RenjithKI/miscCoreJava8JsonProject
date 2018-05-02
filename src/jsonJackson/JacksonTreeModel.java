@@ -14,7 +14,10 @@ import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 public class JacksonTreeModel {
-
+/*In Jackson, you can use “Tree Model” to represent JSON, and perform the read and write operations via JsonNode, it is similar to an XML DOM tree.
+P.S Tested with Jackson 2.6.3
+1. TreeModel Traversing Example
+1.1 JSON file, top level represents an object.*/
 	public static void main(String[] args) {
 
 		try {
@@ -27,7 +30,20 @@ public class JacksonTreeModel {
 			ObjectMapper mapper = new ObjectMapper();
 
 			JsonNode root = mapper.readTree(new File("C:\\ECLIPSEOXYGEN\\WS\\miscJava8Project\\src\\jsonJackson\\user.json"));
+			String resultOriginal = mapper.writerWithDefaultPrettyPrinter().writeValueAsString(root);
+			System.out.println("Before Update " + resultOriginal);
 
+			/*{
+			  "id"   : 1,
+			  "name" : {
+			    "first" : "Paulachan",
+			    "last" : "Pdipara EKM" 
+			  },
+			  "contact" : [
+			    { "type" : "phone/home", "ref" : "111-111-1234"},
+			    { "type" : "phone/work", "ref" : "222-222-2222"}
+			  ]
+			}*/
 			// Get id
 			id = root.path("id").asLong();
 			System.out.println("id : " + id);
