@@ -1,6 +1,14 @@
+/GENERICSSrelated/
+/STRINGrelated/
+/file.json
+/functionalPRogrammingSTREAMoperation/
+/functionalPRogrammingStream/
+/javaCOLLECTIONSapis/
 /jsonGson/
 /jsonJackson/
+/aaaINRTODUCTION.class
 /staticSTATIC/
+/yyyjava8/
 /zzInterviewQandA/
 /zzInterviewQandAHashMap/
 /zzInterviewQandA_Reflection/
@@ -11,4 +19,5 @@
 /zzzJavaSeralizeDeserialize/
 /zzzOracleStream/
 /zzzOracleStreamTechNetwork/
-/yyyjava8/
+/collectorsGroupingBy/
+/streams/

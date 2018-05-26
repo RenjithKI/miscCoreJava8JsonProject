@@ -1,4 +1,4 @@
-package functionalPRogrammingStream;
+package functionalPRogrammingSTREAMoperation;
 
 /**
  * @author Renjith
@@ -25,11 +25,6 @@ public class FilterExample {
         names.stream()
                 .filter(FilterExample::isNotSam)
                 .forEach(System.out::println);
-        
-        
-        names.stream()
-        .filter(FilterExample::isNotSam)
-        .forEach(System.out::println);
 
 
     }

@@ -1,4 +1,4 @@
-package zzInterviewQandAHashMap;
+package javaCOLLECTIONSapis;
 
 /**https://beginnersbook.com/2013/12/hashmap-in-java-with-example/
  * 
@@ -24,10 +24,6 @@ public class DetailsHashMap {
       hmap.put(3, "Anuj");
       hmap.put(null, "Anuj2");
       System.out.println("___##1###___"+ hmap.put(null, "Anuj222") );
-      
-      System.out.println("___##2###___"+ hmap.put(12, "xxxx") );
-      
-      
       System.out.println("___################___"+hmap.put(3, "Anuj3") );
       //
       System.out.println(hmap.keySet());

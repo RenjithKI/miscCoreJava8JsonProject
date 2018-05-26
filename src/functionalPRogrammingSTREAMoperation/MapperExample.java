@@ -1,4 +1,4 @@
-package functionalPRogrammingStream;
+package functionalPRogrammingSTREAMoperation;
 
 /**
  * @author Renjith
@@ -14,7 +14,7 @@ public class MapperExample {
 
         List<String> names = Arrays.asList("Peter", "Sam", "Greg", "Ryan");
 
-        System.out.println("Imperative Style: ###1");
+        System.out.println("Imperative Style: ");
 
         for (String name : names) {
             if (!name.equals("Sam")) {
@@ -23,20 +23,17 @@ public class MapperExample {
             }
         }
 
-        System.out.println("Functional Style: ###2");
+        System.out.println("Functional Style: ");
 
         names.stream()
                 .filter(MapperExample::isNotSam)
                 .map(User::new)
                 .forEach(System.out::println);
-        
-        System.out.println("Functional Style: ### 3");
+
         List<User> userList = names.stream()
                 .filter(MapperExample::isNotSam)
                 .map(User::new)
                 .collect(Collectors.toList());
-        
-        System.out.println("_______________"+userList);
 
     }
 

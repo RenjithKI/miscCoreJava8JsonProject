@@ -1,4 +1,4 @@
-package functionalPRogrammingStream;
+package functionalPRogrammingSTREAMoperation;
 
 /**
  * @author Renjith
@@ -16,7 +16,7 @@ public class FlatMapperExample {
                 new User("Peter", 20, Arrays.asList("1", "2")),
                 new User("Sam", 40, Arrays.asList("3", "4", "5")),
                 new User("Ryan", 60, Arrays.asList("6")),
-                new User("Adam", 70, Arrays.asList("7", "10"))
+                new User("Adam", 70, Arrays.asList("7", "8"))
         );
 
 
