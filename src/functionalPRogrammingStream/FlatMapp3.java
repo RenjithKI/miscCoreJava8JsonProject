@@ -9,7 +9,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
 
-public class FlatMapp2 {
+public class FlatMapp3 {
 
     public static void main(String[] args) {
 
@@ -29,11 +29,17 @@ public class FlatMapp2 {
                 .flatMap(stringStream -> stringStream.filter(phoneNo -> phoneNo.equals("10")))
                 .findAny();*/
         
+        /*Optional<String> stringOptional = users.stream()
+                .map(user -> user.getPhoneNumbers().stream())
+                .flatMap(s -> s.filter(phoneNo -> phoneNo.equals("10")))
+                .findAny();
+*/
         Optional<String> stringOptional = users.stream()
                 .map(user -> user.getPhoneNumbers().stream())
-                .flatMap(stringStream -> stringStream.filter(phoneNo -> phoneNo.equals("10")))
+                .flatMap(s -> s.filter(phoneNo -> (!phoneNo.equals("1")
+                		|| !phoneNo.equals("2")|| !phoneNo.equals("3")|| !phoneNo.equals("4")
+                		)))
                 .findAny();
-
         stringOptional.ifPresent(System.out::println);
 
     }
