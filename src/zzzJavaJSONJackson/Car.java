@@ -21,21 +21,16 @@ import java.util.stream.Stream;
 
 import org.junit.Test;
 
-/**http://www.baeldung.com/jackson-annotations
- * @author Renjith
- *
- */
 
-public class aaastart5 {
-	
-	@Test
-	public void test1() {
-		Stream<String> streamEmpty = Stream.empty();
-		
-		
-		assertTrue(true);
-	}
-	
-	
-	
+public class Car {
+	 
+    String brand;
+     int doors = 0;
+
+    public String getBrand() { return this.brand; }
+    public void   setBrand(String brand){ this.brand = brand;}
+
+    public int  getDoors() { return this.doors; }
+    public void setDoors (int doors) { this.doors = doors; }
+    
 }

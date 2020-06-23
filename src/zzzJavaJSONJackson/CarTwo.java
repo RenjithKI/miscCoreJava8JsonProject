@@ -21,21 +21,33 @@ import java.util.stream.Stream;
 
 import org.junit.Test;
 
-/**http://www.baeldung.com/jackson-annotations
- * @author Renjith
- *
- */
 
-public class aaastart3 {
-	
-	@Test
-	public void test1() {
-		Stream<String> streamEmpty = Stream.empty();
-		
-		
-		assertTrue(true);
+public class CarTwo {
+	 
+    private String color;
+    private String type;
+    
+    
+    
+    
+	public CarTwo(String color, String type) {		
+		this.color = color;
+		this.type = type;
 	}
-	
-	
-	
+	public String getColor() {
+		return color;
+	}
+	public void setColor(String color) {
+		this.color = color;
+	}
+	public String getType() {
+		return type;
+	}
+	public void setType(String type) {
+		this.type = type;
+	}
+ 
+    // standard getters setters
+    
+    
 }

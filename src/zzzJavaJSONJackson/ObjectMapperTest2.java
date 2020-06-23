@@ -21,21 +21,29 @@ import java.util.stream.Stream;
 
 import org.junit.Test;
 
-/**http://www.baeldung.com/jackson-annotations
+import com.fasterxml.jackson.databind.ObjectMapper;
+
+/**http://tutorials.jenkov.com/java-json/jackson-objectmapper.html
  * @author Renjith
  *
  */
 
-public class aaastart2 {
+public class ObjectMapperTest2 {
 	
-	@Test
-	public void test1() {
-		Stream<String> streamEmpty = Stream.empty();
-		
-		
-		assertTrue(true);
+	public static void main(String[] args) {
+	
+		ObjectMapper obj = new ObjectMapper();
+
+//	String carJson = "{ \'brand\': \'Mercedes\', \'doors\' : 5 }";
+	String carJson = "shit";
+
+	try {
+	    Car car = obj.readValue(carJson, Car.class);
+
+	    System.out.println("car brand = " + car.getBrand());
+	    System.out.println("car doors = " + car.getDoors());
+	} catch (IOException e) {
+	    e.printStackTrace();
 	}
-	
-	
-	
+	}
 }
